@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "react-iframe": "^1.8.5",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1"
+  }
+}
