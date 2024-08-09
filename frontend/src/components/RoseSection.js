@@ -11,7 +11,7 @@ const RoseSection = () => {
         2-Hour Weekly Sessions During the Summer
       </Typography>
       <Typography variant="h6">
-        Taught by Stanford & Carnegie Mellon Undergrads
+        Taught by Gunn, Stanford, & Carnegie Mellon Students
       </Typography>
       <Typography variant="h6">
         3 : 1 Student to Instructor Ratio

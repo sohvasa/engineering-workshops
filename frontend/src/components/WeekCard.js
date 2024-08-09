@@ -5,14 +5,16 @@ import Typography from '@mui/material/Typography';
 
 const WeekCard = ({ week }) => {
   return (
-    <Card elevation={0} sx={{ border: '1px solid black', minWidth: 275, height: 200, margin: 2 }}>
+    <Card elevation={0} sx={{ border: '1px solid black', minWidth: 250, height: 180, margin: 1 }}>
       <CardContent>
-        <Typography variant="h6">
+        <Typography variant="h6" sx={{ wordWrap: 'break-word' }}>
           {week.title}
         </Typography>
-        <ul>
+        <ul style={{ paddingLeft: '20px', margin: 0, listStylePosition: 'inside' }}>
           {week.topics.map((topic, index) => (
-            <li key={index}>{topic}</li>
+            <li key={index} style={{ wordWrap: 'break-word', lineHeight: '1.5em' }}>
+              {topic}
+            </li>
           ))}
         </ul>
       </CardContent>

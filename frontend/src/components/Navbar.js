@@ -34,6 +34,9 @@ const Navbar = () => {
         <ListItem button component={Link} to="/">
           <ListItemText primary="Home" />
         </ListItem>
+        <ListItem button component={Link} to="/about">
+          <ListItemText primary="About" />
+        </ListItem>
         <ListItem button component={Link} to="/signup">
           <ListItemText primary="Sign Up" />
         </ListItem>
@@ -45,16 +48,12 @@ const Navbar = () => {
     <AppBar position="static" sx={{ backgroundColor: 'white', color: 'black' }}>
       <Container maxWidth="lg">
         <Toolbar disableGutters>
-          <Typography variant="h6" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Typography variant="h6" sx={{ flexGrow: 1, display: 'flex' }}>
             Palo Alto Engineering Workshops
-          </Typography>
-          <Typography variant="h6" sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            Palo Alto Engineering
-            <br />
-            Workshops
           </Typography>
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <Button color="inherit" component={Link} to="/">Home</Button>
+            <Button color="inherit" component={Link} to="/about">About</Button>
             <Button color="secondary" variant="contained" component={Link} to="/signup">Sign Up</Button>
           </Box>
           <IconButton
