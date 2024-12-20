@@ -22,9 +22,9 @@ const Home = () => {
         <Navbar />
       </Box>
       <ImageGallery />
-      <Box sx={{ textAlign: 'center', padding: 2 }}>
+      {/* <Box sx={{ textAlign: 'center', padding: 2 }}>
         <ReviewsSlider />
-      </Box>
+      </Box> */}
       <RoseSection />
       <Container maxWidth="lg" sx={{ padding: 4 }}>
         <Grid container spacing={2} justifyContent="center">
